@@ -7,6 +7,11 @@ packages:
   gitUrl: https://github.com/Rahul-Sivakumar-IBM
   gitUsername: Rahul-Sivakumar-IBM
   gitBranch: main
+- name: JcHelloWorldAPI
+  gitServerName: Rahul
+  gitUrl: https://github.com/johnpcarter
+  gitUsername: Rahul-Sivakumar-IBM
+  gitTag: v1.0.0
 services:
 - serviceName: project.version.integrations:DAF1
   packages:
