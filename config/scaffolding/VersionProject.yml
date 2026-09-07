@@ -1,23 +1,23 @@
+version: 2.0.0
 info:
   model: int-scaffold
 packages:
-- gitBranch: release/2.0.0
+- name: VersionProject
   gitServerName: Rahul
   gitUrl: https://github.com/Rahul-Sivakumar-IBM
   gitUsername: Rahul-Sivakumar-IBM
-  name: VersionProject
-- gitBranch: main
+  gitBranch: release/2.0.0
+- name: JcHelloWorldAPI
   gitServerName: Rahul
   gitUrl: https://github.com/johnpcarter
   gitUsername: Rahul-Sivakumar-IBM
-  name: JcHelloWorldAPI
+  gitBranch: main
 services:
-- packages:
+- serviceName: project.version.integrations:DAF1
+  packages:
   - name: VersionProject
     version: 2.0.0
-  serviceName: project.version.integrations:DAF1
-- packages:
+- serviceName: pub.date:currentNanoTime
+  packages:
   - name: WmPublic
     version: 12.1.0.0.1070
-  serviceName: pub.date:currentNanoTime
-version: 2.0.0
